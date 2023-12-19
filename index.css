@@ -1,0 +1,131 @@
+body {
+    background: #1F2937;
+    margin: 100px;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#passwords-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin: 0;
+    color: var(--white, #FFF);
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    letter-spacing: -1px;
+}
+
+h3 {
+    color: var(--Medium-grey, #D5D4D8);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin: 0;
+}
+
+hr {
+    height: 1px;
+    background: #2F3E53;
+    border: 0;
+    margin: 50px 0px;
+}
+
+#random-generator-btn {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: none;
+    background: #10B981;
+}
+
+#random-generator-btn:hover {background: #0e9f6f}
+
+#random-generator-btn:active {
+    background: #0e9f6f;
+    transform: translateY(1px);
+}
+
+.green-color {
+    color: #4ADF86;
+}
+
+.password-btn {
+    color: #4ADF86;
+    cursor: pointer;
+    display: flex;
+    background: #273549;
+    width: 211px;
+    height: 39px;
+    line-height: 39px;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+}
+
+#password-one-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#password-two-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip #tooltip-1, .tooltip #tooltip-2 {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover #tooltip-1, .tooltip:hover #tooltip-2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip #tooltip-1::after, .tooltip #tooltip-2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
