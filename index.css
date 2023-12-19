@@ -59,6 +59,16 @@ hr {
     transform: translateY(1px);
 }
 
+#password-length {
+    color: white;
+    width: 200px;
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: none;
+    background: #10B981;
+}
+
 .green-color {
     color: #4ADF86;
 }
@@ -76,12 +86,7 @@ hr {
     align-items: center;
 }
 
-#password-one-text {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#password-two-text {
+#password-one-text, #password-two-text {
     margin-left: auto;
     margin-right: auto;
 }
